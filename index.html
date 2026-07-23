@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070A12" />
+    <meta name="description" content="一个为两个人准备的夏日浪漫清单：51 个计划，12 个已完成，继续把日常升级成共同的未来。" />
+    <title>Summer Duo｜我们的夏日双人系统</title>
+    <link rel="icon" href="cover.svg" type="image/svg+xml" />
+    <link rel="preload" href="cover.svg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header" aria-label="站点导航">
+      <a class="brand" href="#top" aria-label="Summer Duo 首页">
+        <span class="brand-mark">∞</span>
+        <span><strong>Summer Duo</strong><small>Two-person operating system</small></span>
+      </a>
+      <nav class="nav-links" aria-label="页面章节">
+        <a href="#signal">信号</a>
+        <a href="#list">清单</a>
+        <a href="#moments">时刻</a>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">PRIVATE SUMMER PROTOCOL · 2026</p>
+          <h1>把这个夏天，设计成只属于我们的双人系统。</h1>
+          <p class="hero-text">不是喧闹的告白网页，而是一份克制、清晰、持续更新的浪漫产品页：51 个想一起完成的计划，12 个已经点亮，剩下的交给每一次见面。</p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="button button-primary" href="#list">查看夏日清单</a>
+            <button class="button button-secondary" id="pickButton" type="button">随机抽一个今天做</button>
+          </div>
+          <dl class="hero-metrics" aria-label="清单概览">
+            <div><dt>Activities</dt><dd id="metricTotal">51</dd></div>
+            <div><dt>Completed</dt><dd id="metricDone">12</dd></div>
+            <div><dt>Sync</dt><dd>Local</dd></div>
+          </dl>
+        </div>
+        <aside class="hero-visual" aria-label="夏日双人系统封面">
+          <img src="cover.svg" alt="抽象渐变卡片组成的夏日双人系统封面" width="720" height="540" decoding="async" />
+        </aside>
+      </section>
+      <section class="signal-grid section-shell" id="signal" aria-label="关系信号">
+        <article class="bento-card bento-wide">
+          <p class="eyebrow">DESIGN DIRECTION</p>
+          <h2>高科技官网的冷静外壳，包着两个人的柔软计划。</h2>
+          <p>视觉语言参考深色 SaaS landing page：高对比排版、玻璃质感卡片、低饱和霓虹渐变和 Bento 信息层级。内容保留中文、日常、轻微心动，不做传统婚礼模板。</p>
+        </article>
+        <article class="bento-card"><span class="bento-icon">01</span><h3>克制浪漫</h3><p>把“想一起做”写成系统，不煽情，但每一项都能落地。</p></article>
+        <article class="bento-card"><span class="bento-icon">02</span><h3>夏日进度</h3><p>完成度、分类和已点亮项目来自 zip 中真实房间数据。</p></article>
+        <article class="bento-card"><span class="bento-icon">03</span><h3>独立发布</h3><p>纯静态根目录发布，不改动 yiteng-xu.github.io 主站首页。</p></article>
+      </section>
+      <section class="section-shell list-section" id="list">
+        <div class="section-heading">
+          <div><p class="eyebrow">LIVE CHECKLIST</p><h2>夏日清单</h2></div>
+          <div class="progress-module" aria-label="完成进度">
+            <span id="progressText">12 / 51</span>
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="24"><span id="progressBar"></span></div>
+          </div>
+        </div>
+        <div class="toolbar" aria-label="清单筛选和操作">
+          <div class="filter-group" id="filters" aria-label="分类筛选"></div>
+          <button class="ghost-button" id="resetButton" type="button">恢复原始进度</button>
+        </div>
+        <div class="list-layout">
+          <div class="task-panel"><div class="panel-head"><h3>未完成</h3><span id="todoCount">39 项</span></div><div class="task-list" id="todoList"></div></div>
+          <div class="task-panel task-panel-done"><div class="panel-head"><h3>已点亮</h3><span id="doneCount">12 项</span></div><div class="task-list" id="doneList"></div></div>
+        </div>
+      </section>
+      <section class="section-shell moments" id="moments" aria-label="已经发生的时刻">
+        <div class="section-heading simple"><p class="eyebrow">MOMENTS ALREADY LIT</p><h2>这些已经变成了共同记忆。</h2></div>
+        <div class="moment-strip" id="momentStrip"></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>Built for two people, published as an independent GitHub Pages site.</p>
+      <p>Source snapshot: summer-duo-20260720.zip · Room: summer-ef980926</p>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
