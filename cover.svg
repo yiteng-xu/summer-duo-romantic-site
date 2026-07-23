@@ -1,26 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
-  <title id="title">Summer Duo warm summer cover</title>
-  <desc id="desc">A paper-toned editorial cover with a summer arch, flowers and a small shared list.</desc>
-  <rect width="1440" height="1080" fill="#eadfd1"/>
-  <rect x="56" y="56" width="1328" height="968" rx="28" fill="#f7f2e9" stroke="#302b27" stroke-width="3"/>
-  <path d="M172 836V430c0-178 148-322 330-322s330 144 330 322v406Z" fill="#b7625b"/>
-  <path d="M238 836V442c0-142 116-256 264-256s264 114 264 256v394Z" fill="#e8c9c0"/>
-  <circle cx="1017" cy="319" r="151" fill="#e9d79e"/>
-  <circle cx="1091" cy="382" r="151" fill="#aab8a5"/>
-  <path d="M1039 861c42-152 25-301-55-431M1040 863c-22-110-96-197-199-250M1039 698c47-50 88-72 143-91M960 612c-48-56-90-75-151-92" fill="none" stroke="#302b27" stroke-width="7" stroke-linecap="round"/>
-  <path d="M886 529c17-30 42-43 65-41-2 26-16 49-42 59M1117 516c-24-24-26-52-14-73 25 12 39 35 36 63M939 659c-21-28-20-55-6-74 23 14 34 38 27 62" fill="#b7625b" stroke="#302b27" stroke-width="5"/>
-  <path d="M1121 272c28 31 48 68 58 111M1120 273c-37 7-70 22-100 45M1137 331c33-7 63-5 91 4M1031 317c-24 24-42 53-52 86" fill="none" stroke="#302b27" stroke-width="6" stroke-linecap="round"/>
-  <g fill="#302b27" font-family="Georgia, 'Songti SC', serif">
-    <text x="886" y="628" font-size="91" letter-spacing="-4">Summer</text>
-    <text x="887" y="710" font-size="91" letter-spacing="-4">Duo</text>
+  <title id="title">Summer Duo private invitation cover</title>
+  <desc id="desc">An ivory and warm gold romantic invitation card with fine botanical line art and soft rose accents.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf4"/>
+      <stop offset="0.55" stop-color="#fbf3ea"/>
+      <stop offset="1" stop-color="#efe2d2"/>
+    </linearGradient>
+    <radialGradient id="blush" cx="50%" cy="50%" r="58%">
+      <stop offset="0" stop-color="#f0cfc9" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#f0cfc9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#5f4635" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="1080" fill="#efe4d6"/>
+  <circle cx="208" cy="194" r="256" fill="url(#blush)"/>
+  <circle cx="1188" cy="876" r="332" fill="#e9d8bd" opacity="0.42"/>
+
+  <g filter="url(#shadow)">
+    <rect x="104" y="72" width="1232" height="936" rx="34" fill="url(#paper)" stroke="#c3a16b" stroke-width="2"/>
+    <rect x="150" y="118" width="1140" height="844" rx="24" fill="none" stroke="#d8bf91" stroke-width="1.5"/>
+    <rect x="180" y="148" width="1080" height="784" rx="18" fill="none" stroke="#ead8ba" stroke-width="1"/>
   </g>
-  <g fill="#302b27" font-family="Arial, 'Microsoft YaHei', sans-serif">
-    <text x="887" y="772" font-size="24" letter-spacing="7">A LITTLE LIFE, TOGETHER</text>
-    <text x="887" y="824" font-size="22">把下一次见面留在清单里。</text>
+
+  <path d="M405 752V440c0-174 141-315 315-315s315 141 315 315v312" fill="none" stroke="#b8945f" stroke-width="3"/>
+  <path d="M455 752V456c0-146 119-264 265-264s265 118 265 264v296" fill="none" stroke="#e4cda7" stroke-width="2"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M285 777c62-128 68-262 18-403" stroke="#b8945f" stroke-width="4"/>
+    <path d="M301 493c-47-34-78-82-84-133 55 12 94 45 111 94" stroke="#a95c5d" stroke-width="3"/>
+    <path d="M316 596c-52-14-94-47-119-92 58-9 106 9 140 50" stroke="#bcc7b3" stroke-width="3"/>
+    <path d="M294 698c-50 6-97-8-135-39 47-29 95-33 142-12" stroke="#a95c5d" stroke-width="3"/>
+    <path d="M1155 306c-58 143-62 292-10 447" stroke="#b8945f" stroke-width="4"/>
+    <path d="M1137 430c50-27 84-72 98-125-57 4-101 32-125 79" stroke="#a95c5d" stroke-width="3"/>
+    <path d="M1133 563c54-7 101-35 132-78-56-16-107-4-146 33" stroke="#bcc7b3" stroke-width="3"/>
+    <path d="M1147 678c51 13 100 5 142-21-42-35-90-46-140-31" stroke="#a95c5d" stroke-width="3"/>
   </g>
-  <path d="M151 924h1138" stroke="#302b27" stroke-width="2"/>
-  <g fill="#b7625b" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">
-    <text x="152" y="970">PRIVATE SUMMER / 2026</text>
-    <text x="1121" y="970">01 — 51</text>
+
+  <g opacity="0.95">
+    <circle cx="680" cy="505" r="62" fill="none" stroke="#d5b575" stroke-width="6"/>
+    <circle cx="756" cy="505" r="62" fill="none" stroke="#d5b575" stroke-width="6"/>
+    <circle cx="680" cy="505" r="49" fill="none" stroke="#f0dfc4" stroke-width="2"/>
+    <circle cx="756" cy="505" r="49" fill="none" stroke="#f0dfc4" stroke-width="2"/>
+  </g>
+
+  <g text-anchor="middle" fill="#2c2520">
+    <text x="720" y="392" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="22" letter-spacing="8" fill="#b8945f">A PRIVATE SUMMER INVITATION</text>
+    <text x="720" y="618" font-family="Didot, 'Bodoni 72', Georgia, 'Songti SC', serif" font-size="118" letter-spacing="-5">Summer Duo</text>
+    <text x="720" y="684" font-family="Georgia, 'Songti SC', serif" font-size="31" fill="#6d5d54">给下一次见面的一封邀请</text>
+  </g>
+
+  <path d="M545 744h350" stroke="#c3a16b" stroke-width="1.5"/>
+  <g text-anchor="middle" fill="#8b7569" font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <text x="720" y="802" font-size="20" letter-spacing="5">KEEP THE LITTLE DAYS, GENTLY</text>
+    <text x="720" y="846" font-size="20">不急着抵达，只把想一起做的事好好留下。</text>
   </g>
 </svg>
