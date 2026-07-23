@@ -1,35 +1,30 @@
-# Summer Duo｜独立情侣浪漫站
+# Summer Duo
 
-这是基于 summer-duo-20260720.zip 重做的 GitHub Pages 静态站点，不依赖 Node 服务或数据库，也不修改 yiteng-xu.github.io 主站根首页。
+一个独立的静态情侣网站，发布仓库为 `yiteng-xu/summer-duo-romantic-site`。它不会覆盖 `yiteng-xu.github.io` 的个人主页。
 
-## 发布方案
+## 内容来源
 
-- 仓库：yiteng-xu/summer-duo-romantic-site
-- Pages 来源：main 分支根目录
-- 文件结构：所有可发布文件位于仓库根目录，包含 index.html、styles.css、app.js、cover.svg、.nojekyll
-- 数据来源：zip 内 data/rooms.json 的最新房间 summer-ef980926
+页面中的 51 项活动、12 项来源完成记录和房间标识来自用户提供的 `summer-duo-20260720.zip` 中的 `data/rooms.json`，房间为 `summer-ef980926`。页面不添加原始文件之外的统计指标；本机新勾选状态只保存在浏览器 `localStorage`，可以用“恢复来源快照”清除。
 
-## 设计方向
+## 视觉方向
 
-- 深色高端科技公司官网风格：高对比排版、玻璃质感、Bento 卡片、低饱和霓虹渐变
-- 中文内容克制浪漫，围绕“夏日双人系统”和真实 51 项清单展开
-- 不使用传统婚礼模板，不放土味爱心背景
+这一版采用公开浪漫/婚礼邀请网站常见的编辑感留白、衬线标题、时间线式记录和纸张色调，参考了以下公开项目的结构与审美方向，但页面代码和封面图为本仓库独立实现：
 
-## 功能
-
-- 响应式 landing page
-- 51 项活动清单、7 个分类筛选
-- 原始完成度：12 / 51
-- 本地勾选状态保存到浏览器 localStorage
-- 随机抽取一个未完成活动
-- cover.svg 作为优化后的矢量封面图，避免大体积照片资源
+- [Invitation Template](https://rainier-ps.github.io/Invitation-Template/)
+- [Wedding Website](https://rampatra-wedding-website.mintlify.app/)
+- [wedding-invitation-website](https://github.com/archakNath/wedding-invitation-website)
+- [Forever & Always](https://colorlib.com/wp/template/forever-always/)
 
 ## 本地预览
 
-直接打开 index.html，或在该目录运行任意静态服务器：
+在仓库目录运行：
 
-~~~powershell
+```powershell
 python -m http.server 8080
-~~~
+```
 
-然后访问 http://localhost:8080。
+然后访问 `http://localhost:8080`。
+
+## 发布
+
+仓库根目录包含 `index.html`、`styles.css`、`app.js`、`cover.svg` 和 `.nojekyll`，可由 GitHub Pages 从 `main` 分支根目录发布。发布前请确认 GitHub Pages 仍指向这个独立仓库，不要把它复制到 `yiteng-xu.github.io` 根目录。

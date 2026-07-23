@@ -3,84 +3,146 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#070A12" />
-    <meta name="description" content="一个为两个人准备的夏日浪漫清单：51 个计划，12 个已完成，继续把日常升级成共同的未来。" />
-    <title>Summer Duo｜我们的夏日双人系统</title>
+    <meta name="theme-color" content="#f5f0e8" />
+    <meta
+      name="description"
+      content="Summer Duo：从真实房间记录整理出的双人夏日清单，留给下一次见面。"
+    />
+    <title>Summer Duo | 我们的夏日清单</title>
     <link rel="icon" href="cover.svg" type="image/svg+xml" />
     <link rel="preload" href="cover.svg" as="image" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
   </head>
   <body>
-    <div class="ambient ambient-one"></div>
-    <div class="ambient ambient-two"></div>
-    <header class="site-header" aria-label="站点导航">
-      <a class="brand" href="#top" aria-label="Summer Duo 首页">
-        <span class="brand-mark">∞</span>
-        <span><strong>Summer Duo</strong><small>Two-person operating system</small></span>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到 Summer Duo 首页">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy">
+          <strong>Summer Duo</strong>
+          <small>A little life, together</small>
+        </span>
       </a>
-      <nav class="nav-links" aria-label="页面章节">
-        <a href="#signal">信号</a>
+      <nav class="nav-links" aria-label="页面导航">
+        <a href="#story">这段夏天</a>
         <a href="#list">清单</a>
-        <a href="#moments">时刻</a>
+        <a href="#moments">已发生</a>
       </nav>
+      <button class="header-action" id="pickButton" type="button" aria-label="替今天抽一件事">
+        <span aria-hidden="true">↗</span>
+        <span>替今天抽一件事</span>
+      </button>
     </header>
+
     <main id="top">
-      <section class="hero section-shell">
+      <section class="hero section-shell" aria-labelledby="heroTitle">
         <div class="hero-copy">
-          <p class="eyebrow">PRIVATE SUMMER PROTOCOL · 2026</p>
-          <h1>把这个夏天，设计成只属于我们的双人系统。</h1>
-          <p class="hero-text">不是喧闹的告白网页，而是一份克制、清晰、持续更新的浪漫产品页：51 个想一起完成的计划，12 个已经点亮，剩下的交给每一次见面。</p>
-          <div class="hero-actions" aria-label="主要操作">
-            <a class="button button-primary" href="#list">查看夏日清单</a>
-            <button class="button button-secondary" id="pickButton" type="button">随机抽一个今天做</button>
+          <p class="overline">SUMMER DUO / 2026</p>
+          <h1 id="heroTitle">我们把见面，写成一份会慢慢完成的清单。</h1>
+          <p class="hero-lede">
+            不急着把夏天过完。把想一起做的事留在这里，下一次见面时，随手挑一件，慢慢把它变成真正发生过的日子。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#list">打开夏日清单</a>
+            <a class="button button-quiet" href="#moments">看已经发生的事</a>
           </div>
-          <dl class="hero-metrics" aria-label="清单概览">
-            <div><dt>清单总数</dt><dd id="metricTotal">51</dd></div>
-            <div><dt>已点亮</dt><dd id="metricDone">12</dd></div>
-            <div><dt>完成率</dt><dd>24%</dd></div>
-          </dl>
+          <p class="source-line">
+            <span class="source-rule" aria-hidden="true"></span>
+            页面数据来自房间 <code>summer-ef980926</code> 的静态快照；不连接服务器，也不公开编辑权限。
+          </p>
         </div>
-        <aside class="hero-visual" aria-label="夏日双人系统封面">
-          <img src="cover.svg" alt="抽象渐变卡片组成的夏日双人系统封面" width="720" height="540" decoding="async" />
-        </aside>
+        <figure class="hero-art">
+          <img
+            src="cover.svg"
+            alt="暖色纸张和夏日植物组成的 Summer Duo 纪念册封面"
+            width="720"
+            height="540"
+            decoding="async"
+          />
+          <figcaption>
+            <span>ROOM SNAPSHOT</span>
+            <strong>给下一次见面留一个位置。</strong>
+          </figcaption>
+        </figure>
       </section>
-      <section class="signal-grid section-shell" id="signal" aria-label="关系信号">
-        <article class="bento-card bento-wide">
-          <p class="eyebrow">DESIGN DIRECTION</p>
-          <h2>高科技官网的冷静外壳，包着两个人的柔软计划。</h2>
-          <p>视觉语言参考深色 SaaS landing page：高对比排版、玻璃质感卡片、低饱和霓虹渐变和 Bento 信息层级。内容保留中文、日常、轻微心动，不做传统婚礼模板。</p>
-        </article>
-        <article class="bento-card"><span class="bento-icon">01</span><h3>克制浪漫</h3><p>把“想一起做”写成系统，不煽情，但每一项都能落地。</p></article>
-        <article class="bento-card"><span class="bento-icon">02</span><h3>夏日进度</h3><p>完成度、分类和已点亮项目来自 zip 中真实房间数据。</p></article>
-        <article class="bento-card"><span class="bento-icon">03</span><h3>独立发布</h3><p>纯静态根目录发布，不改动 yiteng-xu.github.io 主站首页。</p></article>
+
+      <section class="story section-shell" id="story" aria-labelledby="storyTitle">
+        <div class="story-heading">
+          <p class="overline">THE SMALL PLAN</p>
+          <h2 id="storyTitle">浪漫不是一次完成的惊喜，是一起把普通日子过得很认真。</h2>
+        </div>
+        <div class="story-copy">
+          <p>
+            这份页面保留了原始夏日房间里的 51 项活动和当时已经完成的记录。完成状态只来自那份房间数据；你在本机新勾选的项目会保存在浏览器里，不会冒充原始记录。
+          </p>
+          <div class="ledger" aria-label="清单数据摘要">
+            <div class="ledger-item"><span>原始清单</span><strong id="metricTotal">51</strong><small>项想一起做的事</small></div>
+            <div class="ledger-item"><span>来源已完成</span><strong id="metricSourceDone">12</strong><small>项来自房间快照</small></div>
+            <div class="ledger-item"><span>留给以后</span><strong id="metricRemaining">39</strong><small>项等待下一次见面</small></div>
+          </div>
+        </div>
       </section>
-      <section class="section-shell list-section" id="list">
+
+      <section class="planner section-shell" id="list" aria-labelledby="listTitle">
         <div class="section-heading">
-          <div><p class="eyebrow">LIVE CHECKLIST</p><h2>夏日清单</h2></div>
-          <div class="progress-module" aria-label="完成进度">
-            <span id="progressText">12 / 51</span>
-            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="24"><span id="progressBar"></span></div>
+          <div>
+            <p class="overline">THE LIST</p>
+            <h2 id="listTitle">想一起去做的事。</h2>
+          </div>
+          <div class="progress-module" aria-label="当前浏览器中的完成进度">
+            <div class="progress-label"><span>当前浏览器进度</span><strong id="progressText">12 / 51</strong></div>
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <span id="progressBar"></span>
+            </div>
           </div>
         </div>
-        <div class="toolbar" aria-label="清单筛选和操作">
-          <div class="filter-group" id="filters" aria-label="分类筛选"></div>
-          <button class="ghost-button" id="resetButton" type="button">恢复原始进度</button>
+
+        <div class="toolbar" aria-label="清单操作">
+          <div class="filter-group" id="filters" aria-label="按类别筛选"></div>
+          <button class="text-button" id="resetButton" type="button">恢复来源快照</button>
         </div>
+
         <div class="list-layout">
-          <div class="task-panel"><div class="panel-head"><h3>未完成</h3><span id="todoCount">39 项</span></div><div class="task-list" id="todoList"></div></div>
-          <div class="task-panel task-panel-done"><div class="panel-head"><h3>已点亮</h3><span id="doneCount">12 项</span></div><div class="task-list" id="doneList"></div></div>
+          <section class="task-panel" aria-labelledby="todoTitle">
+            <div class="panel-heading">
+              <div><span class="section-index">01</span><h3 id="todoTitle">还没发生</h3></div>
+              <span id="todoCount">39 项</span>
+            </div>
+            <div class="task-list" id="todoList"></div>
+          </section>
+          <section class="task-panel task-panel-done" aria-labelledby="doneTitle">
+            <div class="panel-heading">
+              <div><span class="section-index">02</span><h3 id="doneTitle">已经点亮</h3></div>
+              <span id="doneCount">12 项</span>
+            </div>
+            <div class="task-list" id="doneList"></div>
+          </section>
         </div>
       </section>
-      <section class="section-shell moments" id="moments" aria-label="已经发生的时刻">
-        <div class="section-heading simple"><p class="eyebrow">MOMENTS ALREADY LIT</p><h2>这些已经变成了共同记忆。</h2></div>
-        <div class="moment-strip" id="momentStrip"></div>
+
+      <section class="moments section-shell" id="moments" aria-labelledby="momentsTitle">
+        <div class="section-heading moments-heading">
+          <div>
+            <p class="overline">THE RECORD</p>
+            <h2 id="momentsTitle">已经发生的小事，也值得被好好记住。</h2>
+          </div>
+          <p class="moments-note">这里展示来源快照中的完成记录，以及你在本机刚刚点亮的项目。</p>
+        </div>
+        <div class="moment-grid" id="momentStrip"></div>
+      </section>
+
+      <section class="closing section-shell" aria-label="结尾寄语">
+        <p class="closing-mark" aria-hidden="true">×</p>
+        <p class="overline">FOR THE NEXT DAY WE MEET</p>
+        <p class="closing-text">愿我们总有下一次见面，也总有一件想一起做的小事。</p>
       </section>
     </main>
-    <footer class="site-footer">
-      <p>Built for two people, published as an independent GitHub Pages site.</p>
-      <p>Source snapshot: summer-duo-20260720.zip · Room: summer-ef980926</p>
+
+    <footer class="site-footer section-shell">
+      <span>Summer Duo · independent static site</span>
+      <span>Source: summer-duo-20260720.zip / room summer-ef980926</span>
     </footer>
+
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </body>
 </html>

@@ -1,32 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
-  <title id="title">Summer Duo abstract product cover</title>
-  <desc id="desc">A dark high-tech abstract bento interface for a two-person summer checklist.</desc>
-  <defs>
-    <radialGradient id="g1" cx="25%" cy="20%" r="65%"><stop offset="0" stop-color="#ff7ab6" stop-opacity=".9"/><stop offset=".45" stop-color="#9b87ff" stop-opacity=".34"/><stop offset="1" stop-color="#070a12" stop-opacity="0"/></radialGradient>
-    <radialGradient id="g2" cx="82%" cy="18%" r="62%"><stop offset="0" stop-color="#70e6ff" stop-opacity=".8"/><stop offset=".55" stop-color="#8fffd2" stop-opacity=".22"/><stop offset="1" stop-color="#070a12" stop-opacity="0"/></radialGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity=".045"/></linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="34" stdDeviation="42" flood-color="#000000" flood-opacity=".42"/></filter>
-  </defs>
-  <rect width="1440" height="1080" rx="68" fill="#070a12"/><rect width="1440" height="1080" rx="68" fill="url(#g1)"/><rect width="1440" height="1080" rx="68" fill="url(#g2)"/>
-  <g opacity=".23"><path d="M0 184H1440M0 336H1440M0 488H1440M0 640H1440M0 792H1440M0 944H1440" stroke="#fff"/><path d="M160 0V1080M320 0V1080M480 0V1080M640 0V1080M800 0V1080M960 0V1080M1120 0V1080M1280 0V1080" stroke="#fff"/></g>
-  <g filter="url(#shadow)">
-    <rect x="110" y="112" width="1220" height="856" rx="48" fill="#0b1020" fill-opacity=".74" stroke="#ffffff" stroke-opacity=".18"/>
-    <rect x="150" y="152" width="1140" height="78" rx="26" fill="url(#card)" stroke="#ffffff" stroke-opacity=".14"/>
-    <circle cx="193" cy="191" r="10" fill="#ff7ab6"/><circle cx="226" cy="191" r="10" fill="#ffd68a"/><circle cx="259" cy="191" r="10" fill="#8fffd2"/>
-    <text x="1066" y="198" fill="#a9b1c7" font-family="Inter, Arial, sans-serif" font-size="24">summer-ef980926</text>
-    <text x="170" y="322" fill="#f6f8ff" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="700" letter-spacing="-5">Summer Duo</text>
-    <text x="174" y="374" fill="#a9b1c7" font-family="Inter, Arial, sans-serif" font-size="28">51 项夏日清单 · 12 项已点亮 · 完成率 24%</text>
-    <rect x="170" y="440" width="500" height="320" rx="34" fill="url(#card)" stroke="#ffffff" stroke-opacity=".16"/>
-    <text x="212" y="504" fill="#70e6ff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">PROGRESS</text>
-    <text x="212" y="590" fill="#f6f8ff" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="-4">12 / 51</text>
-    <rect x="214" y="648" width="384" height="20" rx="10" fill="#ffffff" fill-opacity=".12"/><rect x="214" y="648" width="92" height="20" rx="10" fill="#70e6ff"/>
-    <rect x="710" y="440" width="560" height="142" rx="34" fill="url(#card)" stroke="#ffffff" stroke-opacity=".16"/>
-    <text x="754" y="496" fill="#f6f8ff" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">室内攀岩</text><text x="754" y="540" fill="#a9b1c7" font-family="Inter, Arial, sans-serif" font-size="24">运动 · already lit</text>
-    <circle cx="1212" cy="512" r="24" fill="#8fffd2"/><path d="M1200 511l9 10 18-24" fill="none" stroke="#071018" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="710" y="618" width="560" height="142" rx="34" fill="url(#card)" stroke="#ffffff" stroke-opacity=".16"/>
-    <text x="754" y="674" fill="#f6f8ff" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">逛科技馆</text><text x="754" y="718" fill="#a9b1c7" font-family="Inter, Arial, sans-serif" font-size="24">逛逛 · already lit</text>
-    <circle cx="1212" cy="690" r="24" fill="#9b87ff"/><path d="M1200 689l9 10 18-24" fill="none" stroke="#071018" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="170" y="800" width="1100" height="98" rx="30" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/>
-    <text x="214" y="860" fill="#d8dded" font-family="Inter, Arial, sans-serif" font-size="28">Next signal: randomly choose one plan, then make it real.</text>
+  <title id="title">Summer Duo warm summer cover</title>
+  <desc id="desc">A paper-toned editorial cover with a summer arch, flowers and a small shared list.</desc>
+  <rect width="1440" height="1080" fill="#eadfd1"/>
+  <rect x="56" y="56" width="1328" height="968" rx="28" fill="#f7f2e9" stroke="#302b27" stroke-width="3"/>
+  <path d="M172 836V430c0-178 148-322 330-322s330 144 330 322v406Z" fill="#b7625b"/>
+  <path d="M238 836V442c0-142 116-256 264-256s264 114 264 256v394Z" fill="#e8c9c0"/>
+  <circle cx="1017" cy="319" r="151" fill="#e9d79e"/>
+  <circle cx="1091" cy="382" r="151" fill="#aab8a5"/>
+  <path d="M1039 861c42-152 25-301-55-431M1040 863c-22-110-96-197-199-250M1039 698c47-50 88-72 143-91M960 612c-48-56-90-75-151-92" fill="none" stroke="#302b27" stroke-width="7" stroke-linecap="round"/>
+  <path d="M886 529c17-30 42-43 65-41-2 26-16 49-42 59M1117 516c-24-24-26-52-14-73 25 12 39 35 36 63M939 659c-21-28-20-55-6-74 23 14 34 38 27 62" fill="#b7625b" stroke="#302b27" stroke-width="5"/>
+  <path d="M1121 272c28 31 48 68 58 111M1120 273c-37 7-70 22-100 45M1137 331c33-7 63-5 91 4M1031 317c-24 24-42 53-52 86" fill="none" stroke="#302b27" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#302b27" font-family="Georgia, 'Songti SC', serif">
+    <text x="886" y="628" font-size="91" letter-spacing="-4">Summer</text>
+    <text x="887" y="710" font-size="91" letter-spacing="-4">Duo</text>
+  </g>
+  <g fill="#302b27" font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <text x="887" y="772" font-size="24" letter-spacing="7">A LITTLE LIFE, TOGETHER</text>
+    <text x="887" y="824" font-size="22">把下一次见面留在清单里。</text>
+  </g>
+  <path d="M151 924h1138" stroke="#302b27" stroke-width="2"/>
+  <g fill="#b7625b" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">
+    <text x="152" y="970">PRIVATE SUMMER / 2026</text>
+    <text x="1121" y="970">01 — 51</text>
   </g>
 </svg>
