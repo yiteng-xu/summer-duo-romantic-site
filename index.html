@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#f5f0e8" />
     <meta
       name="description"
-      content="Summer Duo：从真实房间记录整理出的双人夏日清单，留给下一次见面。"
+      content="Summer Duo：一封只写给彼此的夏日邀请，记录下一次见面想一起做的小事。"
     />
-    <title>Summer Duo | 我们的夏日清单</title>
+    <title>Summer Duo | 给下一次见面的一封邀请</title>
     <link rel="icon" href="cover.svg" type="image/svg+xml" />
     <link rel="preload" href="cover.svg" as="image" />
     <link rel="stylesheet" href="styles.css" />
@@ -20,65 +20,66 @@
         <span class="brand-mark" aria-hidden="true">S</span>
         <span class="brand-copy">
           <strong>Summer Duo</strong>
-          <small>A little life, together</small>
+          <small>A private summer letter</small>
         </span>
       </a>
       <nav class="nav-links" aria-label="页面导航">
-        <a href="#story">这段夏天</a>
-        <a href="#list">清单</a>
-        <a href="#moments">已发生</a>
+        <a href="#story">序章</a>
+        <a href="#list">愿望清单</a>
+        <a href="#moments">已成回忆</a>
       </nav>
-      <button class="header-action" id="pickButton" type="button" aria-label="替今天抽一件事">
+      <button class="header-action" id="pickButton" type="button" aria-label="替今天抽一件小事">
         <span aria-hidden="true">↗</span>
-        <span>替今天抽一件事</span>
+        <span>替今天抽一件小事</span>
       </button>
     </header>
 
     <main id="top">
       <section class="hero section-shell" aria-labelledby="heroTitle">
         <div class="hero-copy">
-          <p class="overline">SUMMER DUO / 2026</p>
-          <h1 id="heroTitle">我们把见面，写成一份会慢慢完成的清单。</h1>
+          <p class="overline">SUMMER DUO / A PRIVATE INVITATION</p>
+          <h1 id="heroTitle">把下一次见面，写成一封慢慢抵达的邀请。</h1>
           <p class="hero-lede">
-            不急着把夏天过完。把想一起做的事留在这里，下一次见面时，随手挑一件，慢慢把它变成真正发生过的日子。
+            像一张只寄给彼此的夏日请柬：留白、温柔、有一点期待。把想一起做的事先收在这里，等见面那天，再慢慢拆开。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#list">打开夏日清单</a>
-            <a class="button button-quiet" href="#moments">看已经发生的事</a>
+            <a class="button button-primary" href="#list">打开我们的清单</a>
+            <a class="button button-quiet" href="#moments">翻看已成回忆</a>
           </div>
           <p class="source-line">
             <span class="source-rule" aria-hidden="true"></span>
-            页面数据来自房间 <code>summer-ef980926</code> 的静态快照；不连接服务器，也不公开编辑权限。
+            页面只使用仓库内固化的 <code>summer-ef980926</code> 静态快照；不连接服务器，不公开编辑权限，也不额外编造统计数字。
           </p>
         </div>
         <figure class="hero-art">
           <img
             src="cover.svg"
-            alt="暖色纸张和夏日植物组成的 Summer Duo 纪念册封面"
+            alt="象牙色邀请函、金色线框和柔和花枝组成的 Summer Duo 封面"
             width="720"
             height="540"
             decoding="async"
           />
           <figcaption>
-            <span>ROOM SNAPSHOT</span>
-            <strong>给下一次见面留一个位置。</strong>
+            <span>PRIVATE INVITATION</span>
+            <strong>为下一次并肩而行，留下一处落款。</strong>
           </figcaption>
         </figure>
       </section>
 
       <section class="story section-shell" id="story" aria-labelledby="storyTitle">
         <div class="story-heading">
-          <p class="overline">THE SMALL PLAN</p>
-          <h2 id="storyTitle">浪漫不是一次完成的惊喜，是一起把普通日子过得很认真。</h2>
+          <p class="overline">OUR LITTLE RITUAL</p>
+          <h2 id="storyTitle">浪漫不是热闹的证明，是把普通日子过得有心。</h2>
         </div>
         <div class="story-copy">
           <p>
-            这份页面保留了原始夏日房间里的 51 项活动和当时已经完成的记录。完成状态只来自那份房间数据；你在本机新勾选的项目会保存在浏览器里，不会冒充原始记录。
+            这份页面保留了房间静态快照里的活动清单和当时已经完成的记录。后续在本机新勾选的项目，只会保存在当前浏览器里；它们会被标注为本机记录，不会冒充来源快照。
           </p>
-          <div class="ledger" aria-label="清单数据摘要">
-            <div class="ledger-item"><span>原始清单</span><strong id="metricTotal">51</strong><small>项想一起做的事</small></div>
-            <div class="ledger-item"><span>来源已完成</span><strong id="metricSourceDone">12</strong><small>项来自房间快照</small></div>
-            <div class="ledger-item"><span>留给以后</span><strong id="metricRemaining">39</strong><small>项等待下一次见面</small></div>
+          <div class="source-card" aria-label="来源说明">
+            <span class="source-card-kicker">Source note</span>
+            <p>
+              清单总数 <strong id="metricTotal">51</strong> 项；来源快照中已完成 <strong id="metricSourceDone">12</strong> 项；其余 <strong id="metricRemaining">39</strong> 项留给之后。以上数字由页面内嵌清单实时计算。
+            </p>
           </div>
         </div>
       </section>
@@ -86,11 +87,11 @@
       <section class="planner section-shell" id="list" aria-labelledby="listTitle">
         <div class="section-heading">
           <div>
-            <p class="overline">THE LIST</p>
-            <h2 id="listTitle">想一起去做的事。</h2>
+            <p class="overline">WISH LIST</p>
+            <h2 id="listTitle">把想一起做的事，留成温柔的约定。</h2>
           </div>
           <div class="progress-module" aria-label="当前浏览器中的完成进度">
-            <div class="progress-label"><span>当前浏览器进度</span><strong id="progressText">12 / 51</strong></div>
+            <div class="progress-label"><span>本机点亮进度</span><strong id="progressText">12 / 51</strong></div>
             <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
               <span id="progressBar"></span>
             </div>
@@ -105,14 +106,14 @@
         <div class="list-layout">
           <section class="task-panel" aria-labelledby="todoTitle">
             <div class="panel-heading">
-              <div><span class="section-index">01</span><h3 id="todoTitle">还没发生</h3></div>
+              <div><span class="section-index">01</span><h3 id="todoTitle">留给下一次</h3></div>
               <span id="todoCount">39 项</span>
             </div>
             <div class="task-list" id="todoList"></div>
           </section>
           <section class="task-panel task-panel-done" aria-labelledby="doneTitle">
             <div class="panel-heading">
-              <div><span class="section-index">02</span><h3 id="doneTitle">已经点亮</h3></div>
+              <div><span class="section-index">02</span><h3 id="doneTitle">已经成为回忆</h3></div>
               <span id="doneCount">12 项</span>
             </div>
             <div class="task-list" id="doneList"></div>
@@ -123,24 +124,24 @@
       <section class="moments section-shell" id="moments" aria-labelledby="momentsTitle">
         <div class="section-heading moments-heading">
           <div>
-            <p class="overline">THE RECORD</p>
-            <h2 id="momentsTitle">已经发生的小事，也值得被好好记住。</h2>
+            <p class="overline">MEMORY NOTES</p>
+            <h2 id="momentsTitle">已经发生的小事，轻轻收在这里。</h2>
           </div>
-          <p class="moments-note">这里展示来源快照中的完成记录，以及你在本机刚刚点亮的项目。</p>
+          <p class="moments-note">这里只展示来源快照里的完成记录，以及当前浏览器里新点亮的本机记录。</p>
         </div>
         <div class="moment-grid" id="momentStrip"></div>
       </section>
 
       <section class="closing section-shell" aria-label="结尾寄语">
-        <p class="closing-mark" aria-hidden="true">×</p>
-        <p class="overline">FOR THE NEXT DAY WE MEET</p>
-        <p class="closing-text">愿我们总有下一次见面，也总有一件想一起做的小事。</p>
+        <p class="closing-mark" aria-hidden="true">♡</p>
+        <p class="overline">UNTIL WE MEET AGAIN</p>
+        <p class="closing-text">愿每一次见面，都像拆开一封迟到却刚刚好的信。</p>
       </section>
     </main>
 
     <footer class="site-footer section-shell">
-      <span>Summer Duo · independent static site</span>
-      <span>Source: summer-duo-20260720.zip / room summer-ef980926</span>
+      <span>Summer Duo · independent romantic site</span>
+      <span>Source: embedded room snapshot · summer-ef980926</span>
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>

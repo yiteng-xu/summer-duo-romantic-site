@@ -77,6 +77,10 @@ function formatDate(value) {
   return new Intl.DateTimeFormat("zh-CN", { month: "numeric", day: "numeric" }).format(date);
 }
 
+function isSourceCompletion(activity) {
+  return activity.completedBy === "WoT" || activity.completedBy === "来源快照";
+}
+
 function categories() {
   return ["全部", ...Array.from(new Set(state.activities.map((activity) => activity.category)))];
 }
@@ -104,7 +108,7 @@ function taskCard(activity) {
   const index = state.activities.indexOf(activity);
   const pickedClass = state.pickedTitle === activity.title ? " is-picked" : "";
   const checked = activity.completed ? " checked" : "";
-  const sourceLabel = activity.completedBy === "WoT" ? "来源快照 · " : "本机刚刚点亮 · ";
+  const sourceLabel = isSourceCompletion(activity) ? "来源快照 · " : "本机记录 · ";
   const meta = activity.completed ? `${sourceLabel}${formatDate(activity.completedAt)}` : "留给下一次见面";
   return `<article class="task-card${pickedClass}">
     <input type="checkbox" data-index="${index}"${checked} aria-label="标记 ${escapeHtml(activity.title)} 的完成状态" />
@@ -120,8 +124,8 @@ function emptyState(message) {
 function renderTasks() {
   const todos = filteredActivities(false);
   const dones = filteredActivities(true).sort((a, b) => new Date(b.completedAt || 0) - new Date(a.completedAt || 0));
-  elements.todoList.innerHTML = todos.length ? todos.map(taskCard).join("") : emptyState("这一类已经全部留在回忆里。");
-  elements.doneList.innerHTML = dones.length ? dones.map(taskCard).join("") : emptyState("完成一项之后，它会来到这里。");
+  elements.todoList.innerHTML = todos.length ? todos.map(taskCard).join("") : emptyState("这一类已经被温柔收进回忆。");
+  elements.doneList.innerHTML = dones.length ? dones.map(taskCard).join("") : emptyState("点亮一项之后，它会轻轻来到这里。");
 }
 
 function renderProgress() {
@@ -144,7 +148,7 @@ function renderMoments() {
     .filter((activity) => activity.completed)
     .sort((a, b) => new Date(b.completedAt || 0) - new Date(a.completedAt || 0));
   elements.momentStrip.innerHTML = completed.length
-    ? completed.map((activity) => `<article class="moment-card"><strong>${escapeHtml(activity.title)}</strong><span>${escapeHtml(activity.category)} · ${escapeHtml(activity.completedBy === "WoT" ? "来源房间记录" : "本机记录")} · ${escapeHtml(formatDate(activity.completedAt))}</span></article>`).join("")
+    ? completed.map((activity) => `<article class="moment-card"><strong>${escapeHtml(activity.title)}</strong><span>${escapeHtml(activity.category)} · ${escapeHtml(isSourceCompletion(activity) ? "来源快照" : "本机记录")} · ${escapeHtml(formatDate(activity.completedAt))}</span></article>`).join("")
     : emptyState("还没有被点亮的时刻。");
 }
 
@@ -171,7 +175,7 @@ function toggleActivity(index, completed) {
 function pickOne() {
   const candidates = state.activities.filter((activity) => !activity.completed);
   if (!candidates.length) {
-    showToast("这份清单已经全部点亮。");
+    showToast("这份清单已经全部成为回忆。");
     return;
   }
   const choice = candidates[Math.floor(Math.random() * candidates.length)];
@@ -179,7 +183,7 @@ function pickOne() {
   state.pickedTitle = choice.title;
   render();
   document.querySelector(".task-card.is-picked")?.scrollIntoView({ behavior: "smooth", block: "center" });
-  showToast(`今天可以一起做：${choice.title}`);
+  showToast(`今天可以一起拆开：${choice.title}`);
   window.setTimeout(() => {
     state.pickedTitle = null;
     renderTasks();
@@ -192,7 +196,7 @@ function resetProgress() {
   state.pickedTitle = null;
   localStorage.removeItem(STORAGE_KEY);
   render();
-  showToast("已恢复到来源房间快照。");
+  showToast("已恢复到来源快照。");
 }
 
 function showToast(message) {
